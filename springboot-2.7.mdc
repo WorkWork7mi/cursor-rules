@@ -1,3 +1,9 @@
+---
+description: Spring Boot 2.7.x 企业级最佳实践规范
+globs: **/*.java
+alwaysApply: false
+---
+
 # Spring Boot 2.7.x 企业级最佳实践规范
 
 ## 1. Spring Boot 配置管理
@@ -321,7 +327,3 @@
 - **Prometheus**：监控数据存储
 - **Grafana**：监控数据可视化
 - **ELK Stack**：日志收集和分析
-description:
-globs:
-alwaysApply: false
----
