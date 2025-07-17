@@ -1,0 +1,68 @@
+---
+description: 项目结构规范
+globs:
+alwaysApply: true
+---
+
+# 项目结构规范
+
+## 分层组织原则
+- **分层组织**：按功能或领域分层，推荐如下结构：
+  - `controller/`：接口层，处理 HTTP 请求
+  - `service/`：业务逻辑层，编写核心业务代码
+  - `repository/` 或 `mapper/`：数据访问层，负责数据库操作
+  - `domain/` 或 `entity/`：领域模型或实体类
+  - `config/`：配置类（如安全、数据源、缓存等）
+  - `exception/`：异常定义与全局处理
+  - `dto/`、`vo/`、`converter/`：数据传输对象、视图对象、对象转换
+  - `common/` 或 `util/`：通用工具类、常量、枚举等
+  - `task/`：定时任务
+  - `event/`：事件与监听器
+  - `api/`：对外接口封装（如Feign Client等）
+
+## 包命名原则
+- **基础包名**：`com.company.project`
+- **功能模块**：按业务领域划分，如 `user`、`order`、`payment`
+- **技术分层**：按技术层次划分，如 `controller`、`service`、`repository`
+- **完整包名示例**：`com.company.project.user.controller`
+
+## 文件命名原则
+- **Java类文件**：使用PascalCase，如 `UserController.java`
+- **配置文件**：使用kebab-case，如 `application-dev.yml`
+- **测试文件**：以Test结尾，如 `UserServiceTest.java`
+- **常量文件**：以Constants结尾，如 `UserConstants.java`
+
+## 模块划分原则
+- **按业务领域**：用户模块、订单模块、支付模块等
+- **按技术层次**：Web层、Service层、Repository层等
+- **按功能特性**：认证模块、日志模块、监控模块等
+- **按部署单元**：独立部署的服务模块
+
+## 资源文件分类原则
+- **配置文件**：`src/main/resources/`
+  - `application.yml`：主配置文件
+  - `application-{profile}.yml`：环境配置文件
+  - `static/`：静态资源文件
+  - `templates/`：模板文件
+- **测试资源**：`src/test/`
+  - `{serviceImpl}.java`：测试数据文件
+  - `resources/`：测试配置文件
+  - `mock/`：Mock配置文件
+
+## 依赖管理原则
+- **统一版本**：在父pom中统一管理依赖版本
+- **分类管理**：按功能分类管理依赖
+- **版本锁定**：使用dependencyManagement锁定版本
+- **排除传递依赖**：明确排除不需要的传递依赖
+
+## 配置管理原则
+- **环境分离**：开发、测试、生产环境配置分离
+- **敏感信息**：密码、密钥等敏感信息使用环境变量
+- **配置验证**：使用@Validated验证配置参数
+- **配置文档**：为配置项提供详细说明文档
+
+## 测试管理原则
+- **测试规范**：测试代码与主代码结构一致，单元测试、集成测试分层管理。
+
+## 约定优先原则
+- **约定优先**：遵循语言或框架的标准项目结构约定

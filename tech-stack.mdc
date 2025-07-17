@@ -1,0 +1,44 @@
+---
+description: 项目后端技术栈选型规则
+globs:
+alwaysApply: true
+---
+
+# 技术栈规范
+
+## 基础框架
+- Spring Boot 3（稳定版）
+- JDK 17
+
+## 必备组件
+- Lombok
+- fastjson2
+- Knife4j（API 文档与调试）
+- Hutool（工具类库）
+- MyBatis-Plus（ORM 框架）
+- Redis（缓存/分布式锁/消息）
+
+## 推荐及可选技术栈
+- Spring Cloud（微服务架构，服务注册、配置中心、网关等）
+- Spring Security（安全认证与授权，推荐配合 JWT/OAuth2）
+- Spring Data JPA（数据访问，适合关系型数据库）
+- RabbitMQ/Kafka（消息队列，异步解耦/事件驱动）
+- Elasticsearch（全文检索与日志分析）
+- Nacos/Consul（服务注册与配置中心）
+- Docker（容器化部署，推荐用于 CI/CD 与生产环境）
+- Prometheus + Grafana（监控与告警，配合 Spring Boot Actuator）
+- Jenkins/GitHub Actions（CI/CD 持续集成与部署）
+- Swagger/OpenAPI（API 文档自动生成，推荐配合 Knife4j）
+- MapStruct（对象映射，DTO/VO/Entity 转换）
+- Guava（Google 工具类库，补充 Hutool）
+- Logback/Log4j2（日志，推荐结构化日志输出，便于 ELK/监控系统采集）
+- Caffeine（本地缓存，适合热点数据）
+- TestContainers（集成测试，推荐用于数据库/中间件测试）
+- Micrometer（应用指标采集，配合 Prometheus）
+
+## 规范要求
+- 所有依赖须采用稳定版本，优先选用社区主流方案
+- 禁止引入无维护或安全风险的第三方库
+- 组件选型需结合实际业务场景，避免过度设计
+- 依赖管理统一使用 Maven
+- 配置管理、日志、安全、监控等基础能力必须落地
