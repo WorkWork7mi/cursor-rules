@@ -1,9 +1,9 @@
 ---
-description: 核心开发原则
+description: 核心开发规范
 globs:
 alwaysApply: true
 ---
-# 核心开发原则
+# 核心开发规范
 
 ## 通用开发原则
 

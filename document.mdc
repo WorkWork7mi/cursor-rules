@@ -1,10 +1,10 @@
 ---
-description: Markdown 文件编写规则
+description: Markdown 文件编写规范
 globs: *.md
 alwaysApply: false
 ---
 
-# 文档规范
+# Markdown文档规范
 
 ## 通用要求
 - 所有文档使用Markdown格式

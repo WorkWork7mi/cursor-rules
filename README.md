@@ -21,12 +21,12 @@
 ```
 cursor-rules/
 ├── README.md              # 项目说明文档
-├── core.mdc               # 核心开发原则
+├── core.mdc               # 核心开发规范
 ├── document.mdc           # 文档编写规范
 ├── git.mdc                # Git 版本控制规范
 ├── java-17.mdc            # Java 17 语言规范
 ├── project-structure.mdc  # 项目结构规范
-├── springboot.mdc         # Spring Boot 3 企业级最佳实践
+├── springboot.mdc         # Spring Boot 3 企业级最佳实践规范
 └── tech-stack.mdc         # 技术栈规范
 ```
 
@@ -47,14 +47,9 @@ cursor-rules/
    cd cursor-rules
    ```
 
-2. **配置 Cursor**
-   - 在 Cursor 中打开项目
-   - 规则文件会自动被识别和应用
-
-3. **开发规范**
-   - 遵循 `core.mdc` 中的核心开发原则
-   - 使用 `git.mdc` 中的版本控制规范
-   - 按照 `project-structure.mdc` 组织项目结构
+2. **按照自己需要将其复制到Cursor配置文件中**
+   - 在 Cursor 中打开规则文件夹.cursor\rules
+   - 将需要的规则文件复制粘贴到.cursor\rules中
 
 ### 获取项目
 
