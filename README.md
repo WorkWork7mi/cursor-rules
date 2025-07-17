@@ -18,17 +18,19 @@
 
 ## 📁 项目结构
 
-```
-cursor-rules/
-├── README.md              # 项目说明文档
-├── core.mdc               # 核心开发规范
-├── document.mdc           # 文档编写规范
-├── git.mdc                # Git 版本控制规范
-├── java-17.mdc            # Java 17 语言规范
-├── project-structure.mdc  # 项目结构规范
-├── springboot.mdc         # Spring Boot 3 企业级最佳实践规范
-└── tech-stack.mdc         # 技术栈规范
-```
+  ```
+  cursor-rules/
+  ├── README.md              # 项目说明文档
+  ├── core.mdc               # 核心开发规范
+  ├── document.mdc           # 文档编写规范
+  ├── git.mdc                # Git 版本控制规范
+  ├── java-8.mdc             # Java 8 语言规范
+  ├── java-17.mdc            # Java 17 语言规范
+  ├── project-structure.mdc  # 项目结构规范
+  ├── springboot-2.7.mdc     # Spring Boot 2.7.x 企业级最佳实践规范
+  ├── springboot.mdc         # Spring Boot 3 企业级最佳实践规范
+  └── tech-stack.mdc         # 技术栈规范
+  ```
 
 
 ## 🚀 快速开始
@@ -75,10 +77,17 @@ cd cursor-rules
 - 包命名原则和文件命名规范
 - 模块划分和资源文件分类
 
-### Spring Boot 最佳实践 (`springboot.mdc`)
+### Spring Boot 最佳实践 (`springboot-2.7.mdc`, `springboot.mdc`)
+- Spring Boot 2.7.x 企业级开发规范
 - Spring Boot 3 企业级开发规范
 - 配置管理、安全、监控等最佳实践
 - 微服务架构设计原则
+
+### Java 语言规范 (`java-8.mdc`, `java-17.mdc`)
+- Java 8 特性：Lambda 表达式、Stream API、Optional
+- Java 17 特性：Text Blocks、Pattern Matching、Records
+- 命名约定、代码风格、异常处理
+- 并发编程、性能优化、测试规范
 
 ### 技术栈规范 (`tech-stack.mdc`)
 - 基础框架和必备组件
