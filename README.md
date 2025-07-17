@@ -118,3 +118,7 @@ cd cursor-rules
 ---
 
 **注意**: 本规则集合持续更新中，建议定期同步最新版本以获得最佳开发体验。
+
+## 致谢
+
+本项目部分规则文件参考并整理自 [flyeric0212/cursor-rules](https://github.com/flyeric0212/cursor-rules) 开源仓库，特此致谢！
