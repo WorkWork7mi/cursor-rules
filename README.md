@@ -21,13 +21,13 @@
 ```
 cursor-rules/
 ├── README.md              # 项目说明文档
-├── core.mdc              # 核心开发原则
-├── document.mdc          # 文档编写规范
-├── git.mdc              # Git 版本控制规范
-├── java-17.mdc          # Java 17 语言规范
-├── project-structure.mdc # 项目结构规范
-├── springboot.mdc       # Spring Boot 3 企业级最佳实践
-└── tech-stack.mdc       # 技术栈规范
+├── core.mdc               # 核心开发原则
+├── document.mdc           # 文档编写规范
+├── git.mdc                # Git 版本控制规范
+├── java-17.mdc            # Java 17 语言规范
+├── project-structure.mdc  # 项目结构规范
+├── springboot.mdc         # Spring Boot 3 企业级最佳实践
+└── tech-stack.mdc         # 技术栈规范
 ```
 
 
